@@ -8,8 +8,8 @@ Vous trouverez également les graphiques permettant de comparer les deux méthod
 
 Multiplieur asynchrone :
 
-![alt text](multiplieur_async.png)
+![alt text](multiplier_async.png)
 
 Multiplieur synchrone :
 
-![alt text](multiplieur_sync.png)
+![alt text](multiplier_sync.png)
