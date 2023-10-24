@@ -31,16 +31,16 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity multiplier_async is
-    Generic(nbit: integer := 64);
+entity multiplier_sync is
+    Generic(nbit: integer := 16);
     Port(input1: in STD_LOGIC_VECTOR (nbit-1 downto 0);
         input2: in STD_LOGIC_VECTOR (nbit-1 downto 0);
         reset: in STD_LOGIC;
         clk: in STD_LOGIC;
         output: out STD_LOGIC_VECTOR (2*nbit-1 downto 0));
-end multiplier_async;
+end multiplier_sync;
 
-architecture Behavioral of multiplier_async is
+architecture Behavioral of multiplier_sync is
 
 signal input1_s, input2_s : signed (nbit-1 downto 0);
 signal output_s : signed (2*nbit-1 downto 0);
@@ -49,9 +49,10 @@ begin
 
 process(clk, reset)
 begin
-    if (reset = '1') then
-        output_s <= (others => '0');
-    elsif (clk'event and clk = '1') then
+    if (clk'event and clk = '1') then
+        if (reset = '1') then
+            output_s <= (others => '0');
+        end if;
         input1_s <= signed(input1);
         input2_s <= signed(input2);
         output_s <= input1_s * input2_s;
