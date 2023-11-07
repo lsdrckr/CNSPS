@@ -4,7 +4,7 @@ Voici dans ce dépôt l'ensemble des fichiers sources utilisé pour réaliser le
 
 ## Etude
 
-Le pin inout est paramétré à la fois en entrée et en sortie. Ici, j'ai implémenté une commande qui décide si le pin est en entrée ou en sortie. Cette méthode utilise 2 registres.
+Le pin inout est paramétré à la fois en entrée et en sortie. Ici, j'ai implémenté une commande qui décide si le pin est en entrée ou en sortie. Cette méthode utilise 2 registres et 4 entrées/sorties.
 
 Voici le code utilisé :
 ```vhdl
@@ -34,5 +34,8 @@ output <= output_s;
 end Behavioral;
 ```
 
-Schematic de ce circuit :
+Schematic de la synthèse :
 ![alt text](schematic_inout.png)
+
+Schematic de l'implémentation :
+![alt text](imp_schematic_inout.png)
