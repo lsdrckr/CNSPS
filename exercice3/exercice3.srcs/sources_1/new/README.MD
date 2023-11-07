@@ -35,7 +35,9 @@ end Behavioral;
 ```
 
 Schematic de la synthèse :
+
 ![alt text](schematic_inout.png)
 
 Schematic de l'implémentation :
+
 ![alt text](imp_schematic_inout.png)
