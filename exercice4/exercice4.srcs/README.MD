@@ -1,4 +1,4 @@
-# Inout pin
+# Large adder
 
 Voici dans ce dépôt l'ensemble des fichiers sources utilisé pour réaliser les tests sur l'additionneur non signé.
 
@@ -37,3 +37,5 @@ end Behavioral;
 Schematic de la synthèse :
 
 ![alt text](schematic_generic_adder.png)
+
+NB : je n'ai pas pu réaliser une étude sur le WNS en fonction du nombre de bits, ce dernier restant bloqué à 9.376 ns. Cependant, si j'avais pu, j'aurais trouvé le chemin le plus long, qui est sans dout celui contenant la retenue. 

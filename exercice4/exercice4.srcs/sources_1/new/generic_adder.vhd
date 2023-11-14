@@ -32,7 +32,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity generic_adder is
-    Generic(nbit: integer := 32);
+    Generic(nbit: integer := 128);
     Port(input1: in STD_LOGIC_VECTOR (nbit-1 downto 0);
         input2: in STD_LOGIC_VECTOR (nbit-1 downto 0);
         clk: in STD_LOGIC;
