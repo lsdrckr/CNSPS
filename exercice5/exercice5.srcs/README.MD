@@ -1,4 +1,4 @@
-# Inout pin
+# Complex multiplier
 
 Voici dans ce dépôt l'ensemble des fichiers sources utilisé pour réaliser les tests sur le multiplieur complexe.
 
